@@ -67,7 +67,8 @@ SqlPackage.exe /a:Import /sf:testExport.bacpac /tdn:NewDacFX /tsn:apptestserver.
 Use the [New-AzureRmSqlDatabaseImport](/powershell/module/azurerm.sql/new-azurermsqldatabaseimport) cmdlet to submit an import database request to the Azure SQL Database service. Depending on the size of your database, the import operation may take some time to complete.
 
  ```powershell
- $importRequest = New-AzureRmSqlDatabaseImport -ResourceGroupName "myResourceGroup" `
+
+$importRequest = New-AzureRmSqlDatabaseImport -ResourceGroupName "myResourceGroup" `
     -ServerName $servername `
     -DatabaseName "MyImportSample" `
     -DatabaseMaxSizeBytes "262144000" `
@@ -110,6 +111,6 @@ You can also use these wizards:
 * To learn how to connect to and query an imported SQL Database, see [Connect to SQL Database with SQL Server Management Studio and perform a sample T-SQL query](sql-database-connect-query-ssms.md).
 * For a SQL Server Customer Advisory Team blog about migrating using BACPAC files, see [Migrating from SQL Server to Azure SQL Database using BACPAC Files](https://blogs.msdn.microsoft.com/sqlcat/2016/10/20/migrating-from-sql-server-to-azure-sql-database-using-bacpac-files/).
 * For a discussion of the entire SQL Server database migration process, including performance recommendations, see [Migrate a SQL Server database to Azure SQL Database](sql-database-cloud-migrate.md).
-
+* To learn how to manage and share storage keys or shared access signitures securely, see [Azure Storage Security Guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
 
 
