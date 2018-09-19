@@ -57,7 +57,7 @@ You don't have to include all the tables that are in a database in a sync group.
 
 #### Primary keys
 
-Each table in a sync group must have a primary key. The SQL Data Sync service can't sync a table that doesn't have a primary key.
+Each table in a sync group must have a primary key with clustered index. The SQL Data Sync service can't sync a table that doesn't have a primary key.
 
 Before using SQL Data Sync in production, test initial and ongoing sync performance.
 
